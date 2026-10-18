@@ -1,0 +1,413 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>直通云(ZTCloud) — 稳定的网络中继与加速接入服务</title><meta name="description" content="直通云(ZTCloud)提供面向个人与团队的加速网络接入服务。我们以问答形式解答线路选择、流量配置与客户端使用中可能遇到的疑问。"><meta name="keywords" content="直通云,ZTCloud,网络中继服务,隐私接入,企业路由"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-9e5c891ac5.bbjrk.cn/"><meta property="og:type" content="website"><meta property="og:title" content="直通云(ZTCloud) — 稳定的网络中继与加速接入服务"><meta property="og:description" content="直通云(ZTCloud)提供面向个人与团队的加速网络接入服务。我们以问答形式解答线路选择、流量配置与客户端使用中可能遇到的疑问。"><meta property="og:url" content="https://p-9e5c891ac5.bbjrk.cn/"><meta property="og:site_name" content="直通云(ZTCloud)"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-9e5c891ac5.bbjrk.cn/", "name": "直通云(ZTCloud) — 稳定的网络中继与加速接入服务", "description": "直通云(ZTCloud)提供面向个人与团队的加速网络接入服务。我们以问答形式解答线路选择、流量配置与客户端使用中可能遇到的疑问。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="1e262ed3d13af38319a122e4:7786680791a5f15bd3c6899f679c1ae4c71523fcf30ce1e3590d3328fed0c182:71d47614c048e79a5bc4"></head><body id="top"><style>
+:root{--bg:#1f2733;--panel:#161c25;--accent:#4fb3bf;--text:#cfd8e3;--muted:#8b97a7;--border:#2b3645;--on-accent:#0c1f23}
+*{box-sizing:border-box;margin:0;padding:0}
+html{}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* 面包屑 + 目录导航 */
+.breadcrumb{position:sticky;top:0;z-index:10;background:rgba(22,28,37,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:12px clamp(16px,4vw,40px);display:flex;flex-direction:column;gap:8px}
+.crumb-trail{font-size:13px;color:var(--muted)}
+.crumb-trail span:not(:last-child)::after{content:" / ";color:var(--border);margin:0 6px}
+.crumb-trail span:last-child{color:var(--text)}
+.nav-list{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;font-size:14px}
+.nav-list a{color:var(--muted);padding:4px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.nav-list a:hover{color:var(--accent);text-decoration:none;border-bottom-color:var(--accent)}
+
+/* 首屏 */
+.hero{display:grid;grid-template-columns:1fr 1.2fr;min-height:84vh;border-bottom:1px solid var(--border)}
+.hero-text{padding:clamp(40px,8vw,80px) clamp(20px,5vw,64px);display:flex;flex-direction:column;justify-content:center}
+.hero-text h1{font-size:clamp(36px,6vw,72px);font-weight:700;letter-spacing:-1.5px;line-height:1.05;color:#eaf2f7}
+.hero-text h1 .accent{color:var(--accent)}
+.hero-lead{margin-top:24px;max-width:480px;font-size:clamp(16px,1.4vw,19px);color:var(--muted)}
+.hero-meta{margin-top:32px;display:flex;gap:32px;flex-wrap:wrap}
+.hero-meta .pair{border-left:2px solid var(--accent);padding-left:12px}
+.hero-meta .pair .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px}
+.hero-meta .pair .val{font-size:20px;color:#eaf2f7;font-weight:600}
+
+/* 信息面板 */
+.hero-panel{background:var(--panel);padding:clamp(32px,5vw,56px);display:flex;flex-direction:column;gap:20px;border-left:1px solid var(--border)}
+.hero-panel h2{font-size:13px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);font-weight:500;border-bottom:1px dashed var(--border);padding-bottom:12px}
+.qa-inline{display:grid;grid-template-columns:auto 1fr;gap:8px 16px}
+.qa-inline .q{color:var(--accent);font-weight:600;font-size:14px}
+.qa-inline .a{color:var(--text);font-size:14px}
+.qa-inline .a em{font-style:normal;color:var(--muted);font-size:13px;display:block;margin-top:4px}
+
+/* 通用区块 */
+section{padding:clamp(48px,8vw,96px) clamp(20px,5vw,64px)}
+.section-title{font-size:clamp(26px,3.6vw,42px);font-weight:700;letter-spacing:-0.5px;color:#eaf2f7;margin-bottom:10px}
+.section-intro{font-size:15px;color:var(--muted);max-width:640px;margin-bottom:40px}
+
+/* 卡片：编号大字压底 */
+.card-list{display:grid;gap:20px;grid-template-columns:1fr}
+.card{position:relative;background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:36px 32px 28px 32px;overflow:hidden;transition:border-color .2s}
+.card:hover{border-color:var(--accent)}
+.card::before{content:attr(data-no);position:absolute;right:-10px;bottom:-30px;font-size:140px;font-weight:800;color:rgba(75,179,191,0.08);letter-spacing:-5px;pointer-events:none;line-height:1}
+.card h3{font-size:19px;color:#eaf2f7;margin-bottom:8px;position:relative}
+.card p{color:var(--text);font-size:15px;position:relative}
+.card .tag{display:inline-block;font-size:12px;color:var(--accent);border:1px solid var(--accent);padding:2px 8px;border-radius:2px;margin-bottom:14px}
+
+/* 套餐：纵向列表 */
+.plans-wrap{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.plan{display:grid;grid-template-columns:1fr 2fr auto;gap:20px;padding:28px 0;border-bottom:1px solid var(--border);align-items:start}
+.plan:last-child{border-bottom:none}
+.plan-name{font-size:18px;font-weight:700;color:#eaf2f7}
+.plan-name .annual{display:block;font-size:13px;font-weight:400;color:var(--accent);margin-top:4px}
+.plan-features{list-style:none;font-size:14px;color:var(--text)}
+.plan-features li{margin-bottom:6px;padding-left:16px;position:relative}
+.plan-features li::before{content:"—";position:absolute;left:0;color:var(--muted)}
+.plan-price{font-size:26px;font-weight:700;color:#eaf2f7;text-align:right;white-space:nowrap}
+.plan.featured{background:rgba(75,179,191,0.06);margin:0 -16px;padding:28px 16px;border-left:2px solid var(--accent);border-right:2px solid var(--accent)}
+.plan.featured .plan-price{color:var(--accent)}
+.badge{display:inline-block;background:var(--accent);color:var(--on-accent);font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px;margin-left:8px;vertical-align:middle;letter-spacing:1px}
+
+/* 客户端 */
+.clients-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);border:1px solid var(--border)}
+.client{background:var(--panel);padding:28px 24px}
+.client h4{font-size:16px;color:#eaf2f7;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between}
+.client .platform{font-size:12px;color:var(--muted);font-weight:400}
+.client p{font-size:14px;color:var(--muted);margin-bottom:12px}
+.client .obtain{font-size:13px;color:var(--accent)}
+.client .obtain .url{display:block;color:var(--text);font-size:12px;margin-top:4px;word-break:break-all}
+
+/* FAQ 编号列表 */
+.faq-list{list-style:none;counter-reset:faq}
+.faq-item{counter-increment:faq;padding:24px 0 24px 56px;border-bottom:1px solid var(--border);position:relative}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-item::before{content:counter(faq,decimal-leading-zero);position:absolute;left:0;top:24px;font-size:28px;font-weight:700;color:var(--accent);line-height:1}
+.faq-item h3{font-size:17px;color:#eaf2f7;margin-bottom:8px;font-weight:600}
+.faq-item p{color:var(--text);font-size:15px}
+.faq-item p + p{margin-top:10px}
+
+/* 使用说明 */
+.steps{display:grid;gap:0;border-top:1px solid var(--border)}
+.step{display:grid;grid-template-columns:48px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--border)}
+.step .num{font-size:24px;font-weight:700;color:var(--accent)}
+.step h3{font-size:17px;color:#eaf2f7;margin-bottom:6px}
+.step p{color:var(--text);font-size:15px}
+
+/* 页脚 */
+footer{padding:48px clamp(20px,5vw,64px);border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+
+@media(max-width:880px){
+  .hero{grid-template-columns:1fr}
+  .hero-panel{border-left:none;border-top:1px solid var(--border)}
+  .plan{grid-template-columns:1fr;gap:16px}
+  .plan-price{text-align:left}
+  .plan.featured{margin:0;padding:28px 16px}
+}
+</style><nav class="breadcrumb">
+  <div class="crumb-trail">
+    <span>首页</span><span>网络服务</span><span>直通云(ZTCloud)</span>
+  </div>
+  <ul class="nav-list">
+    <li><a href="#intro">概览</a></li>
+    <li><a href="#features">核心特性</a></li>
+    <li><a href="#plans">订阅方案</a></li>
+    <li><a href="#clients">客户端</a></li>
+    <li><a href="#guide">使用指南</a></li>
+    <li><a href="#faq">常见问题</a></li>
+  </ul>
+</nav>
+
+<main>
+  
+  <header class="hero">
+    <div class="hero-text">
+      <h1>直通云(ZTCloud) · 直通云<br><span class="accent">ZTCloud</span></h1>
+      <p class="hero-lead">
+        面向个人用户与小型团队的加密网络中继服务。我们专注解决跨境访问延迟、
+        公共网络监听与多设备协同接入这三件事，不堆砌功能，不夸大宣传。
+      </p>
+      <div class="hero-meta">
+        <div class="pair">
+          <div class="label">服务状态</div>
+          <div class="val">运行中</div>
+        </div>
+        <div class="pair">
+          <div class="label">接入协议</div>
+          <div class="val">多协议兼容</div>
+        </div>
+        <div class="pair">
+          <div class="label">起售价格</div>
+          <div class="val">¥15/月起</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="hero-panel">
+      <h2>关于直通云，你可能想先知道</h2>
+      <div class="qa-inline">
+        <div class="q">Q：直通云适合什么人？</div>
+        <div class="a">需要稳定访问海外资源、进行跨地域协同工作的个人开发者、内容创作者与远程办公团队。<em>不适合用于任何违反所在地区法律法规的用途。</em></div>
+
+        <div class="q">Q：和市面同类服务有何不同？</div>
+        <div class="a">我们不做无限流量噱头，而是明确标注每个套餐的带宽上限与设备数限制，让你按实际需求选购。</div>
+
+        <div class="q">Q：需要自己配置吗？</div>
+        <div class="a">客户端提供一键导入功能，订阅链接复制后即可自动同步节点。进阶用户也可手动编辑配置。</div>
+
+        <div class="q">Q：如何开始使用？</div>
+        <div class="a">选择下方订阅方案，完成支付后即可在用户中心获取专属订阅地址，然后下载对应平台的客户端导入。</div>
+      </div>
+    </aside>
+  </header>
+
+  
+  <section id="features">
+    <h2 class="section-title">我们实际在做的事</h2>
+    <p class="section-intro">
+      直通云不追求覆盖所有场景。我们将精力集中在以下四个方向，
+      确保每一项都能被量化和验证，而不是停留在营销话术层面。
+    </p>
+
+    <div class="card-list">
+      <article class="card">
+        <span class="tag">基础设施</span>
+        <h3>多地域中继节点部署</h3>
+        <p>
+          节点分布于亚太、北美与欧洲主要骨干网络交汇区域，采用 BGP 智能路由调度。
+          普通线路面向日常浏览与下载，IPLC 专线面向对延迟敏感的实时通信场景，
+          两者在订阅中分开标注，不做混用。
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">隐私保护</span>
+        <h3>传输层加密与零日志策略</h3>
+        <p>
+          全链路采用 AEAD 加密协议，中继服务器仅转发流量，不记录访问目标、连接时间与 payload 内容。
+          服务端日志仅保留用于计费的流量累计数值，**72 小时后自动轮转清除**。
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">设备管理</span>
+        <h3>按账号维度的多端接入</h3>
+        <p>
+          一个订阅账号可在多个设备上同时在线，数量随套餐档次递增。
+          设备列表可在用户中心实时查看与强制下线，更换设备无需联系客服手动解绑。
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">售后支持</span>
+        <h3>分级响应的工单体系</h3>
+        <p>
+          基础版用户通过工单系统提交问题，常规响应时间在 24 小时内。
+          旗舰版与团队版享有优先队列与专属客户经理直联通道，
+          线路异常与路由调整可在工单内直接追踪处理进度。
+        </p>
+      </article>
+    </div>
+  </section>
+
+  
+  <section id="plans" class="plans-wrap">
+    <h2 class="section-title">订阅方案与价格</h2>
+    <p class="section-intro">
+      所有方案均按月或按年计费，年付享折扣。流量为每月重置的计量额度，
+      不累积至次月。如需更高带宽或企业级路由定制，可联系团队版客户经理。
+    </p>
+
+    <div class="plan">
+      <div class="plan-name">基础版<span class="annual">年付 ¥150/年</span></div>
+      <ul class="plan-features">
+        <li>每月 100GB 计量流量</li>
+        <li>支持 3 台设备同时在线</li>
+        <li>解锁基础流媒体区域内容</li>
+        <li>接入普通线路节点池</li>
+        <li>标准工单支持</li>
+      </ul>
+      <div class="plan-price">¥15<small>/月</small></div>
+    </div>
+
+    <div class="plan featured">
+      <div class="plan-name">旗舰版<span class="badge">推荐</span><span class="annual">年付 ¥350/年</span></div>
+      <ul class="plan-features">
+        <li>每月 300GB 计量流量</li>
+        <li>支持 5 台设备同时在线</li>
+        <li>全节点原生流媒体解锁</li>
+        <li>IPLC 专线游戏加速优化</li>
+        <li>7×24 优先工单队列</li>
+      </ul>
+      <div class="plan-price">¥35<small>/月</small></div>
+    </div>
+
+    <div class="plan">
+      <div class="plan-name">团队版<span class="annual">年付 ¥850/年</span></div>
+      <ul class="plan-features">
+        <li>每月 1000GB 计量流量</li>
+        <li>支持 20 台设备同时在线</li>
+        <li>VIP 专属高带宽节点池</li>
+        <li>支持企业定制路由策略</li>
+        <li>专属客户经理与电话支持</li>
+      </ul>
+      <div class="plan-price">¥85<small>/月</small></div>
+    </div>
+  </section>
+
+  
+  <section id="clients">
+    <h2 class="section-title">客户端接入</h2>
+    <p class="section-intro">
+      直通云采用通用订阅协议，兼容主流第三方客户端。你也可以使用我们推荐的以下工具，
+      它们在各自平台上经过我们的兼容性验证。客户端本身免费，订阅服务另计。
+    </p>
+
+    <div class="clients-grid">
+      <div class="client">
+        <h4>Clash Verge <span class="platform">Windows / macOS / Linux</span></h4>
+        <p>基于 Clash Meta 内核的图形化客户端，支持规则分流与多订阅切换，适合进阶用户。</p>
+        <div class="obtain">获取方式：开源项目主页下载
+          <span class="url">请通过 GitHub 搜索 "Clash Verge" 获取最新发布版本</span>
+        </div>
+      </div>
+
+      <div class="client">
+        <h4>Shadowrocket <span class="platform">iOS / iPadOS</span></h4>
+        <p>App Store 上架的付费客户端，支持扫码与订阅链接导入，操作简单，适合 iPhone 用户。</p>
+        <div class="obtain">获取方式：App Store 购买
+          <span class="url">售价以 App Store 实际标价为准</span>
+        </div>
+      </div>
+
+      <div class="client">
+        <h4>v2rayN <span class="platform">Windows</span></h4>
+        <p>轻量级桌面客户端，资源占用低，支持多种协议导入，适合老旧设备或最小化部署场景。</p>
+        <div class="obtain">获取方式：开源项目主页下载
+          <span class="url">请通过 GitHub 搜索 "v2rayN" 获取最新发布版本</span>
+        </div>
+      </div>
+
+      <div class="client">
+        <h4>Surge <span class="platform">macOS / iOS</span></h4>
+        <p>专业级网络调试与代理工具，功能强大但价格较高，适合需要深度规则配置的开发者。</p>
+        <div class="obtain">获取方式：官方网站购买
+          <span class="url">请访问 Surge 官方网站了解授权方案</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="guide">
+    <h2 class="section-title">从零开始使用直通云</h2>
+    <p class="section-intro">
+      如果你从未配置过类似服务，按照以下四步即可完成接入。
+      每一步都列出了你可能遇到的关键判断点。
+    </p>
+
+    <div class="steps">
+      <article class="step">
+        <div class="num">01</div>
+        <div>
+          <h3>选择订阅方案并完成支付</h3>
+          <p>
+            根据你的设备数量与流量需求选择基础版、旗舰版或团队版。支付完成后，
+            系统会自动开通账号并向你注册邮箱发送登录凭证。年付用户享有相当于两个月免费的折扣。
+          </p>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="num">02</div>
+        <div>
+          <h3>登录用户中心获取订阅链接</h3>
+          <p>
+            使用邮箱与初始密码登录用户中心，在「我的订阅」页面找到一串以 https 开头的订阅地址。
+            这个地址是你的账号凭证，**请勿在公共场合分享或截图发布**。
+          </p>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="num">03</div>
+        <div>
+          <h3>下载并安装对应平台客户端</h3>
+          <p>
+            参考上方的客户端列表，根据你的操作系统选择合适的工具。Windows 推荐 Clash Verge，
+            iOS 推荐 Shadowrocket。安装时如遇系统安全提示，请确认来源为官方渠道后再授权。
+          </p>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="num">04</div>
+        <div>
+          <h3>导入订阅并选择节点连接</h3>
+          <p>
+            在客户端中找到「订阅」或「配置」入口，粘贴你的订阅链接并更新。
+            节点列表刷新后，选择一个延迟较低的节点，点击连接开关。状态栏图标变化即表示已接入。
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  
+  <section id="faq">
+    <h2 class="section-title">常见问题</h2>
+    <p class="section-intro">
+      这里收录了用户在选购和使用过程中最常提出的疑问。如果你的问题未在此列出，
+      可通过工单系统提交，我们会在工作时间内回复。
+    </p>
+
+    <ol class="faq-list">
+      <li class="faq-item">
+        <h3>流量用完后还能上网吗？</h3>
+        <p>
+          不能。当月流量耗尽后，中继服务会暂停直至次月重置。你可以选择升级到更高档位套餐，
+          或单独购买流量加油包。流量重置时间为每月订阅日的对应日期，并非自然月 1 号。
+        </p>
+      </li>
+
+      <li class="faq-item">
+        <h3>为什么实际网速达不到套餐标称带宽？</h3>
+        <p>
+          带宽标称是中继服务器端口的理论上限，实际速度受本地运营商出口、目标网站限速、
+          节点负载与传输协议开销多重影响。建议在不同时段多次测速取平均值，
+          如持续低于标称的 30%，可提交工单排查。
+        </p>
+      </li>
+
+      <li class="faq-item">
+        <h3>可以试用吗？不满意能退款吗？</h3>
+        <p>
+          直通云目前不提供免费试用。新用户在订阅 48 小时内、且使用流量不超过 5GB 的情况下，
+          可申请无理由全额退款。超出此条件的退款申请将视具体情况由客服评估处理。
+        </p>
+      </li>
+
+      <li class="faq-item">
+        <h3>更换设备需要重新订阅吗？</h3>
+        <p>
+          不需要。订阅与账号绑定，与设备无关。你只需在新设备上安装客户端并导入同一个订阅链接即可。
+          但同时在线的设备数不能超过套餐上限，超出后最早连接的设备会被自动顶下线。
+        </p>
+      </li>
+
+      <li class="faq-item">
+        <h3>订阅链接失效了怎么办？</h3>
+        <p>
+          登录用户中心，在「我的订阅」页面点击「重置链接」即可生成新的订阅地址。
+          旧地址会立即失效，所有已导入旧地址的客户端需要重新更新配置。建议在怀疑链接泄露时主动重置。
+        </p>
+      </li>
+
+      <li class="faq-item">
+        <h3>团队版可以给不同成员设置不同权限吗？</h3>
+        <p>
+          团队版支持子账号分配功能，主账号可为每个子账号单独设定流量配额与可用节点范围。
+          但精细到路由规则级别的权限控制需要联系客户经理进行企业级定制，不属于标准团队版功能。
+        </p>
+      </li>
+    </ol>
+  </section>
+</main>
+
+<footer>
+  <div>直通云(ZTCloud) — 本页面内容为服务介绍，不构成任何形式的承诺或担保。</div>
+  <div>© ZTCloud. 网络接入服务受所在地法律法规约束，请合规使用。</div>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
